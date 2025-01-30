@@ -1,0 +1,96 @@
+<!-- Documento HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <!-- Estilos internos -->
+    <style>
+        form, fieldset {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- Formulário principal -->
+    <form>
+        <!-- Campo de informações pessoais -->
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            <br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            <br>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+            <br>
+            
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+            <br>
+            
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br>
+        </fieldset>
+
+        <!-- Campo de informações adicionais -->
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+            <br>
+            
+            <label for="arquivo">Anexar arquivo:</label>
+            <input type="file" id="arquivo" name="arquivo">
+            <br>
+            
+            <label for="cor">Escolha uma cor:</label>
+            <input type="color" id="cor" name="cor">
+            <br>
+            
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" max="10">
+            <br>
+            
+            <label for="site">Site:</label>
+            <input type="url" id="site" name="site" placeholder="Digite a URL do seu site">
+            <br>
+            
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora">
+            <br>
+            
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="100">
+            <br>
+            
+            <label for="termos">
+                <input type="checkbox" id="termos" name="termos" required>
+                Aceito os termos e condições
+            </label>
+            <br>
+        </fieldset>
+        
+        <!-- Botões de envio e reset -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetar">
+    </form>
+</body>
+</html>
